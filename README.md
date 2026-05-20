@@ -1,23 +1,21 @@
-# web
+# WhoKnows
 
-.NET 10 Empty Web Template
+Dynamic underwriting platform with:
 
-[![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/web.png)](http://web.web-templates.io/)
+- React client for administrator and underwriter workflows
+- .NET backend APIs for clients, applications, quotes, policies, endorsements, limits, deductibles, and bordereau reporting
+- Administrator-managed question and rule configuration (no code changes needed)
 
-> Browse [source code](https://github.com/NetCoreTemplates/web), view live demo [web.web-templates.io](http://web.web-templates.io):
+## Run
 
 ```bash
-npx create-net web ProjectName
+dotnet run --project /home/runner/work/WhoKnows/WhoKnows/MyApp/MyApp.csproj
 ```
 
-## Jumpstart with Copilot
+Open <http://localhost:5000>.
 
-Instantly [scaffold a new App with this template](https://github.com/new?template_name=web&template_owner=NetCoreTemplates) using GitHub Copilot, just describe the features you want and watch Copilot build it!
-
-### Update Server TypeScript DTOs
-
-Run the dtos package.json script to update your server dtos:
+## Test
 
 ```bash
-npm run dtos
+dotnet test /home/runner/work/WhoKnows/WhoKnows/MyApp.Tests/MyApp.Tests.csproj
 ```
