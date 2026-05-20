@@ -1,6 +1,14 @@
 {
     "scripts": {
         "dtos": "npx get-dtos mjs",
-        "dev": "dotnet watch"
+        "dev": "dotnet watch",
+        "build:ui": "npx esbuild ui/app.jsx --bundle --format=iife --platform=browser --outfile=wwwroot/app.bundle.js --jsx=automatic"
+    },
+    "dependencies": {
+        "react": "^19.2.6",
+        "react-dom": "^19.2.6"
+    },
+    "devDependencies": {
+        "esbuild": "^0.28.0"
     }
 }
